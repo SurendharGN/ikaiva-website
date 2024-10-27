@@ -15,10 +15,12 @@ import page10 from "../../../public/portfolio assets/artistsHub/page-10.png";
 import page11 from "../../../public/portfolio assets/artistsHub/page-11.png";
 import page12 from "../../../public/portfolio assets/artistsHub/page-12.png";
 
+import { Link } from 'react-router-dom';
+
 const TheArtistsHub = () => {
   return (
     <body>
-      <p>ikaiva <span>studio.</span></p>
+      <p className="logo">ikaiva <span>studio.</span></p>
       <div>
         <h1>THE ARTIST'S HUB</h1>
 
@@ -51,6 +53,9 @@ const TheArtistsHub = () => {
       <img src={page10} alt="" className="artists-hub-images" />
       <img src={page11} alt="" className="artists-hub-images" />
       <img src={page12} alt="" className="artists-hub-images" />
+
+      <p style={{color:"#333"}}>NEXT PROJECT</p>
+      <Link to="/AuraStudio" className="nextProject">AURA STUDIO</Link>
     </body>
   )
 }

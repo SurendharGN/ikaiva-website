@@ -13,16 +13,19 @@ import page9 from '../../../public/portfolio assets/aura/page-9.png';
 import page10 from '../../../public/portfolio assets/aura/page-10.png';
 import page11 from '../../../public/portfolio assets/aura/page-11.png';
 
+// importing libraries
+import { Link } from 'react-router-dom';
+
 const AuraStudio = () => {
   return (
     <body>
-      <p>ikaiva <span>studio.</span></p>
+      <p className="logo">ikaiva <span>studio.</span></p>
       <div>
-        <h1>AMPLIFY MEDIA HOUSE</h1>
+        <h1>AURA STUDIO</h1>
 
         <div>
           <h2>STORY</h2>
-          <p>The Artist's Hub is a global platform dedicated to showcasing and connecting diverse creators across every art form.</p>
+          <p>Aura Home Interiors was born from a deep love for Persian artistry and the timeless elegance of home design. Rooted in the rich cultural heritage of Persia, Their studio seeks to bring the beauty of ancient craftsmanship into modern homes.</p>
         </div>
         
         <div>
@@ -32,7 +35,7 @@ const AuraStudio = () => {
         
         <div>
           <h2>ROLE</h2>
-          <p>High-Fidelity Wireframe, UI/UX Design, Interactive Prototype</p>
+          <p>Visual identity and Brand Strategy</p>
         </div>
       </div>
 
@@ -48,6 +51,9 @@ const AuraStudio = () => {
       <img src={page9} alt="" className="aura-images" />
       <img src={page10} alt="" className="aura-images" />
       <img src={page11} alt="" className="aura-images" />
+
+      <p style={{color:"#333"}}>NEXT PROJECT</p>
+      <Link to="/EmberRoast" className="nextProject">EMBER ROAST</Link>
       
     </body>
   )

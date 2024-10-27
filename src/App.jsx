@@ -21,7 +21,7 @@ function App() {
 
   return (
     <body>
-      <h1>ikaiva <span>studio.</span></h1>
+      <h1 className='logo'>ikaiva <span>studio.</span></h1>
 
       <div className="project" onClick={()=>navigate('/TheArtistsHub')} style={{ cursor: 'pointer' }}>
         <img src={artistHubCover} alt="" className='cover-page'/>

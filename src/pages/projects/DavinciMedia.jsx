@@ -13,17 +13,21 @@ import page8 from '../../../public/portfolio assets/davinciMedia/page-8.png';
 import page9 from '../../../public/portfolio assets/davinciMedia/page-9.png';
 import page10 from '../../../public/portfolio assets/davinciMedia/page-10.png';
 
+// IMPORTING THE LIBRARIES
+import { Link } from 'react-router-dom';
 
 const DavinciMedia = () => {
   return (
     <body>
-      <p>ikaiva <span>studio.</span></p>
+      <p className="logo">ikaiva <span>studio.</span></p>
       <div>
-        <h1>AMPLIFY MEDIA HOUSE</h1>
+        <h1>DAVINCI MEDIA</h1>
 
         <div>
           <h2>STORY</h2>
-          <p>The Artist's Hub is a global platform dedicated to showcasing and connecting diverse creators across every art form.</p>
+          <p>Founded on the principles of innovation and creativity, DaVinci Media was born to bring cinematic storytelling to the forefront. We thrive on telling stories that are not only visually stunning but emotionally resonant. </p>
+
+          <p>Whether it's through films, documentaries, or commercials, we aim to create content that leaves a lasting impact on the audience.</p>
         </div>
         
         <div>
@@ -49,6 +53,8 @@ const DavinciMedia = () => {
       <img src={page9} alt="" className="davinci-images" />
       <img src={page10} alt="" className="davinci-images" />
       
+      <p style={{color:"#333"}}>NEXT PROJECT</p>
+      <Link to="/TheArtistsHub" className="nextProject">THE ARTISTS HUB</Link>
     </body>
   )
 }
