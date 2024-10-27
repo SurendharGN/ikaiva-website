@@ -23,37 +23,37 @@ function App() {
     <body>
       <h1>ikaiva <span>studio.</span></h1>
 
-      <div className="project" onClick={()=>navigate('/TheArtistsHub')} >
+      <div className="project" onClick={()=>navigate('/TheArtistsHub')} style={{ cursor: 'pointer' }}>
         <img src={artistHubCover} alt="" className='cover-page'/>
         <p>THE ARTIST'S HUB '24</p>
       </div>
       
-      <div className="project">
+      <div className="project" onClick={()=>navigate('/AuraStudio')} style={{ cursor: 'pointer' }}>
         <img src={auraCover} alt="" className="cover-page"/>
         <p>AURA STUDIO '24</p>
       </div>
 
-      <div className="project">
+      <div className="project" onClick={()=>navigate('/EmberRoast')} style={{ cursor: 'pointer' }}>
         <img src={emberCover} alt="" className="cover-page"/>
         <p>EMBER ROAST '24</p>
       </div>
 
-      <div className="project">
+      <div className="project" onClick={()=>navigate('/AstralisVentures')} style={{ cursor: 'pointer' }}>
         <img src={astralisCover} alt="" className="cover-page"/>
         <p>ASTRALIS VENTURES '24</p>
       </div>
 
-      <div className="project">
+      <div className="project" onClick={()=>navigate('/HarmonyStore')} style={{ cursor: 'pointer' }}>
         <img src={harmonyCover} alt="" className="cover-page"/>
         <p>THE HARMONY STORE '24</p>
       </div>
 
-      <div className="project">
-        <img src={amplifyCover} alt="" className="cover-page"/>
+      <div className="project" onClick={()=>navigate('/AmplifyMediaHouse')} style={{ cursor: 'pointer' }}>
+        <img src={amplifyCover} alt="" className="cover-page" />
         <p>AMPLIFY MEDIA HOUSE '24</p>
       </div>
 
-      <div className="project">
+      <div className="project" onClick={()=>navigate('/DavinciMedia')} style={{ cursor: 'pointer' }}>
         <img src={davinciCover} alt="" className="cover-page"/>
         <p>DAVINCI MEDIA '24</p>
       </div>
