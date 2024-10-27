@@ -20,7 +20,50 @@ h1, p{
   font-family: Helvetica;
 }
 
+/* image styling */
 .artists-hub-images{
+  width: 100%;
+  height: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.davinci-images {
+  width: 100%;
+  height: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.ember-images {
+  width: 100%;
+  height: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.astralis-images {
+  width: 100%;
+  height: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.aura-images {
+  width: 100%;
+  height: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.harmony-images {
+  width: 100%;
+  height: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.amplify-images {
   width: 100%;
   height: auto;
   margin-top: 6px;
