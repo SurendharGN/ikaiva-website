@@ -21,9 +21,50 @@ function App() {
 
   return (
     <body>
-      <h1 className='logo'>ikaiva <span>studio.</span></h1>
 
-      <div className="project" onClick={()=>navigate('/TheArtistsHub')} style={{ cursor: 'pointer' }}>
+      <div id="hero-section">
+
+        <div id="left-container">
+          <h1 className='logo'>ikaiva <span>studio.</span></h1>
+
+          <div id="rich-text-container">
+            <span id="richText">IKAIVA</span>
+          </div>
+
+          <p id="homepage-desc">ikaiva is an independently owned creative studio, specializing in branding and interface design for businesses all over the world.</p>
+
+          <div id="contact">
+            <a href="https://www.instagram.com/ikaiva.studio/"  target="_blank" >INSTAGRAM</a>
+            <a href="https://x.com/IkaivaStudio" target="_blank" >X</a>
+            <a href="https://www.linkedin.com/company/ikaiva-studio" target="_blank" >LINKEDIN</a>
+            <a href="mailto:ikaiva.studio@gmail.com" target="_blank" >CONTACT</a>
+          </div>
+        </div>
+
+        <div id="vid-container">
+          <video preload="true" autoPlay loop muted src='../src/assets/homepage.mp4' id="hero-vid"></video>
+        </div>
+          
+        
+      </div>
+
+      <div className="scroll-container">
+      <div className="scroll-item">Container 1</div>
+      <div className="scroll-item">Container 2</div>
+      <div className="scroll-item">Container 3</div>
+      <div className="scroll-item">Container 4</div>
+      <div className="scroll-item">Container 5</div>
+      <div className="scroll-item">Container 6</div>
+      <div className="scroll-item">Container 7</div>
+      <div className="scroll-item">Container 8</div>
+      <div className="scroll-item">Container 9</div>
+    </div>
+
+      
+
+      {/* <div id="project-display">
+        <div id="project-container">
+          <div className="project" onClick={()=>navigate('/TheArtistsHub')} style={{ cursor: 'pointer' }}>
         <img src={artistHubCover} alt="" className='cover-page'/>
         <p>THE ARTIST'S HUB '24</p>
       </div>
@@ -57,6 +98,8 @@ function App() {
         <img src={davinciCover} alt="" className="cover-page"/>
         <p>DAVINCI MEDIA '24</p>
       </div>
+        </div>
+      </div> */}
     </body>
   )
 }

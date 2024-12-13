@@ -1,7 +1,16 @@
 @font-face {
   font-family: helvetica;
-  src: url(../font/HelveticaNeueRoman.otf);
+    src: url(../font/HelveticaNeueMedium.otf);
+    
 }
+
+@font-face {
+  font-family: blackheat;
+  src: url(../font/Blackheat.otf);
+
+}
+
+
 .cover-page {
   width:100%;
   height:auto;
@@ -11,6 +20,9 @@ html{
 }
 :root {
   background-color: black;
+  font-family: helvetica;
+  margin:0;
+  padding:0;
 }
 
 span {
@@ -25,6 +37,12 @@ h1{
 body{
   color: white;
   font-family:helvetica;
+  margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* Prevent accidental scrollbars */
 }
 
 /* image styling */
@@ -86,22 +104,155 @@ h2{
 }
 
 .logo {
-  font-size:1.5rem;
+  font-size:1.7vw;
   margin:0;
   padding:0;
-  font-weight:bold;
   letter-spacing:-1px;
   margin-top: 16px;
   margin-bottom: 16px;
   font-family: helvetica;
 }
 
-p{
-  margin:12px 0px 12px 0px
-}
+
 
 .nextProject {
   text-decoration: none;
   color:white;
   font-size:2rem;
+}
+
+
+
+@media screen and (min-width: 1020px) {
+
+  #homepage-desc {
+      font-family: helvetica;
+      font-size: 1.6vw;
+      letter-spacing: -1px;
+      margin: 0;
+      padding: 0;
+  
+  
+  
+    }
+  #left-container {
+      margin-left: 16px
+    }
+  
+    #rich-text-container {
+      display: inline-block;
+      padding: 0;
+      margin-top: 4rem;
+      line-height: normal;
+    }
+  
+    #richText {
+      font-size: 36vw;
+      font-family: blackheat;
+      color: white;
+      line-height: 0.7;
+  
+  
+  
+    }
+  
+    #hero-section {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+  
+    #contact {
+      width: 96%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 7rem;
+    }
+  
+    a {
+      text-decoration: none;
+      color: white;
+  
+    }
+  
+    #vid-container {
+      width: 100%;
+  
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      position: relative;
+      display: inline-block;
+  
+  
+    }
+  
+    #vid-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, black, transparent);
+      pointer-events: none;
+  
+    }
+  
+    #hero-vid {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  .container{
+    height:100px;
+    width:100px;
+    background-color: aliceblue;
+  }
+    
+    /* Scrollable Parent */
+    #scroll-container {
+      display: flex;
+      /* Align child elements in a row */
+      flex-wrap: nowrap;
+      /* Prevent wrapping to the next row */
+      overflow-x: auto;
+      /* Enable horizontal scrolling */
+      height: 100vh;
+      /* Match viewport height */
+      scroll-snap-type: x mandatory;
+      /* Optional: Smooth snapping to containers */
+      gap: 16px;
+      /* Optional: Spacing between containers */
+    }
+  
+    /* Scrollable Items */
+    .scroll-item {
+      flex: 0 0 auto;
+      /* Prevent resizing */
+      width: 100vw;
+      /* Full viewport width */
+      height: 100vh;
+      /* Full viewport height */
+      background-color: #ccc;
+      /* Example background color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+  
+    /* Optional: Styling for Scrollbar */
+    #scroll-container::-webkit-scrollbar {
+      height: 8px;
+    }
+  
+    #scroll-container::-webkit-scrollbar-thumb {
+      background-color: darkgray;
+      border-radius: 4px;
+    }
 }
