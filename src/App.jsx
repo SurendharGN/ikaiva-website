@@ -42,7 +42,7 @@ function App() {
         </div>
 
         <div id="vid-container">
-          <video preload="true" autoPlay loop muted src='../public/portfolio assets/homepage.mp4' id="hero-vid"></video>
+          <video preload="true" autoPlay loop muted src='../public/homepage.mp4' id="hero-vid"></video>
         </div>
           
         
