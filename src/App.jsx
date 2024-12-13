@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+// importing the video
+import homepageVideo from "../public/homepage.mp4"
 // importing cover pages
 import artistHubCover from '../public/portfolio assets/artistsHub/cover-page.png';
 import auraCover from '../public/portfolio assets/aura/aura-cover-page.png';
@@ -42,7 +44,7 @@ function App() {
         </div>
 
         <div id="vid-container">
-          <video preload="true" autoPlay loop muted src='../public/homepage.mp4' id="hero-vid"></video>
+          <video preload="true" autoPlay loop muted src={homepageVideo} id="hero-vid"></video>
         </div>
           
         
