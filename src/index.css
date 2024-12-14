@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family: blackheat;
-  src: url(../font/Blackheat.otf);
+  font-family: tusker;
+  src: url(../font/TuskerGrotesk-3700Bold.ttf);
 
 }
 
@@ -129,7 +129,7 @@ h2{
       font-family: helvetica;
       font-size: 1.6vw;
       letter-spacing: -1px;
-      margin: 0;
+      margin-top: 32px;
       padding: 0;
   
   
@@ -147,8 +147,8 @@ h2{
     }
   
     #richText {
-      font-size: 36vw;
-      font-family: blackheat;
+      font-size: 26vw;
+      font-family: tusker;
       color: white;
       line-height: 0.7;
   
@@ -167,7 +167,7 @@ h2{
       width: 96%;
       display: flex;
       justify-content: space-between;
-      margin-top: 7rem;
+      margin-top: 5rem;
     }
   
     a {
