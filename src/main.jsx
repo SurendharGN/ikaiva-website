@@ -11,6 +11,7 @@ import AuraStudio from './pages/projects/AuraStudio.jsx';
 import DavinciMedia from './pages/projects/DavinciMedia.jsx';
 import EmberRoast from './pages/projects/EmberRoast.jsx';
 import HarmonyStore from './pages/projects/HarmonyStore.jsx';
+import Sample from './pages/projects/Sample.jsx';
 
 // importing ract-router-dom
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -41,6 +42,9 @@ const router=createBrowserRouter([
   },{
     path:'/HarmonyStore',
     element:<HarmonyStore/>
+  },{
+    path:'/sample',
+    element:<Sample/>
   },
 ]);
 

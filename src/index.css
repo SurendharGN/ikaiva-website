@@ -10,40 +10,12 @@
 
 }
 
-
 .cover-page {
   width:100%;
   height:auto;
 }
-html{
-  font-size: 16px;
-}
-:root {
-  background-color: black;
-  font-family: helvetica;
-  margin:0;
-  padding:0;
-}
+/* This hides scrollbars but keeps scrolling enabled */
 
-span {
-  color:blue
-}
-
-h1{
-  letter-spacing: 0px;
-  font-weight: 300;
-}
-
-body{
-  color: white;
-  font-family:helvetica;
-  margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    /* Prevent accidental scrollbars */
-}
 
 /* image styling */
 .artists-hub-images{
@@ -122,8 +94,129 @@ h2{
 }
 
 
+@media screen and (max-width:900px){
+  body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: black;
+    text-align:center;
+    margin:0;
+    overflow-x: hidden;
+  }
+
+    
+    #hero-vid {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      object-position:70% 75%;
+      z-index:-1
+      
+    }
+
+
+  #projects{
+    display:none;
+  }
+
+  #contact{
+    display:none;
+  }
+  #richText{
+    font-family:tusker;
+    color:white;
+    font-size:53vw;
+  }
+
+}
 
 @media screen and (min-width: 1020px) {
+
+  html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
+      /* Disable default scrollbars */
+    }
+  
+  
+  
+    /* Hide scrollbars for Webkit browsers (Chrome, Safari, Edge) */
+    body::-webkit-scrollbar {
+      display: none;
+      /* Hides scrollbar */
+    }
+  
+  
+  
+  
+    /* Hide scrollbars for Firefox */
+    html {
+      scrollbar-width: none;
+      /* Firefox */
+    }
+  
+    :root {
+      background-color: black;
+      font-family: helvetica;
+      margin: 0;
+      padding: 0;
+    }
+  
+    span {
+      color: blue
+    }
+  
+    h1 {
+      letter-spacing: 0px;
+      font-weight: 300;
+    }
+  
+    body {
+  
+      color: white;
+      font-family: helvetica;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+  
+  
+  
+  
+      /* Prevent accidental scrollbars */
+    }
+
+  #projects-parent{
+    height:3000vh;
+    overflow:scroll;
+    position: relative;
+  }
+
+    
+  
+    #projects-parent{
+     
+      /* For Firefox, hides scrollbar */
+      scrollbar-color: transparent transparent;
+      /* Makes scrollbar invisible */
+    }
+  #projects{
+    position: absolute;
+      top: 0;
+      left: 0;
+      
+      /* Prevent scrolling within the container */
+      z-index: 2;
+      scrollbar-width: none;
+      overflow: scroll;
+      
+    
+
+  }
 
   #homepage-desc {
       font-family: helvetica;
@@ -157,10 +250,13 @@ h2{
     }
   
     #hero-section {
-      display: flex;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
+      position: relative;
+        z-index: 1;
+        /* Ensures it is layered below the scrollable containers */
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
     }
   
     #contact {
@@ -178,15 +274,11 @@ h2{
   
     #vid-container {
       width: 100%;
-  
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-      position: relative;
-      display: inline-block;
-  
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
   
     }
   
@@ -203,56 +295,50 @@ h2{
     }
   
     #hero-vid {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     }
-  .container{
-    height:100px;
-    width:100px;
-    background-color: aliceblue;
-  }
+  
     
-    /* Scrollable Parent */
-    #scroll-container {
-      display: flex;
-      /* Align child elements in a row */
-      flex-wrap: nowrap;
-      /* Prevent wrapping to the next row */
-      overflow-x: auto;
-      /* Enable horizontal scrolling */
-      height: 100vh;
-      /* Match viewport height */
-      scroll-snap-type: x mandatory;
-      /* Optional: Smooth snapping to containers */
-      gap: 16px;
-      /* Optional: Spacing between containers */
-    }
-  
-    /* Scrollable Items */
-    .scroll-item {
-      flex: 0 0 auto;
-      /* Prevent resizing */
-      width: 100vw;
-      /* Full viewport width */
-      height: 100vh;
-      /* Full viewport height */
-      background-color: #ccc;
-      /* Example background color */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 24px;
-    }
-  
-    /* Optional: Styling for Scrollbar */
-    #scroll-container::-webkit-scrollbar {
-      height: 8px;
-    }
-  
-    #scroll-container::-webkit-scrollbar-thumb {
-      background-color: darkgray;
-      border-radius: 4px;
-    }
+    
+    
 }
+
+
+.scroll-wrapper {
+  height: 100vh; 
+  width: 100%; 
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.scroll-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width:3000vw;
+  will-change: transform;
+  margin-left:100vw;
+  overflow: hidden;
+  
+}
+
+.scroll-item {
+  flex: 0 0 60vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  font-size: 24px;
+  
+}
+
+
+

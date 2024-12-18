@@ -14,15 +14,17 @@ import astralisCover from '../public/portfolio assets/astralisVentures/astralisV
 import amplifyCover from '../public/portfolio assets/amplify/amplify-cover-page.png';
 import davinciCover from '../public/portfolio assets/davinciMedia/davinci-cover-page.png';
 
+import Sample from '../src/pages/projects/Sample.jsx'
 // importing functions
-import { useNavigate } from 'react-router-dom';
 
 function App() {
 
-  const navigate=useNavigate()
+  
 
   return (
     <body>
+
+      
 
       <div id="hero-section">
 
@@ -50,17 +52,7 @@ function App() {
         
       </div>
 
-      <div className="scroll-container">
-      <div className="scroll-item">Container 1</div>
-      <div className="scroll-item">Container 2</div>
-      <div className="scroll-item">Container 3</div>
-      <div className="scroll-item">Container 4</div>
-      <div className="scroll-item">Container 5</div>
-      <div className="scroll-item">Container 6</div>
-      <div className="scroll-item">Container 7</div>
-      <div className="scroll-item">Container 8</div>
-      <div className="scroll-item">Container 9</div>
-    </div>
+      
 
       
 
@@ -102,6 +94,11 @@ function App() {
       </div>
         </div>
       </div> */}
+      <div id="projects">
+        <Sample/>
+
+      </div>
+      
     </body>
   )
 }
