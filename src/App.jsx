@@ -48,6 +48,10 @@ function App() {
         <div id="vid-container">
           <video preload="true" autoPlay loop muted src={homepageVideo} id="hero-vid"></video>
         </div>
+
+        <div id="rich-text-container-mobile">
+            <span id="richText">IKAIVA</span>
+          </div>
           
         
       </div>
