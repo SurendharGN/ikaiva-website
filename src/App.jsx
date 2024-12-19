@@ -52,22 +52,22 @@ function App() {
         <div id="rich-text-container-mobile">
             <span id="richText">IKAIVA</span>
           </div>
-          
-        
+
+        <div id="projects-mobile">
+          <div className="p"></div>
+          <div className="p"></div>
+          <div className="p"></div>
+          <div className="p"></div>
+          <div className="p"></div>
+          <div className="p"></div>
+          <div className="p"></div>
+          <div className="p"></div>
+          <div className="p"></div>
+          <div className="p"></div>
+        </div>
       </div>
 
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      
       
 
       

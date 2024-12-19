@@ -170,11 +170,33 @@ h2{
   #contact{
     display:none;
   }
+
+  #rich-text-container-mobile{
+    line-height:1;
+    overflow:hidden;
+    width:100%
+  }
   #richText{
     font-family:tusker;
     color:white;
     font-size:53vw;
-    line-height:0.9;
+    margin:0;
+    padding:0;
+    
+  }
+
+  #projects-mobile{
+    display:flex;
+    gap:30px;
+    flex-direction: column;
+    margin-top:32px;
+
+  }
+
+  .p{
+    height:250px;
+    width:100%;
+    background-color: gray;
   }
 
 }
@@ -191,6 +213,7 @@ h2{
       padding: 0;
       height: 100%;
       overflow-x: hidden;
+      display:flex;
       /* Disable default scrollbars */
     }
   
