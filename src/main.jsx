@@ -11,6 +11,9 @@ import EmberRoast from './pages/projects/EmberRoast.jsx';
 import HarmonyStore from './pages/projects/HarmonyStore.jsx';
 import Sample from './pages/projects/Sample.jsx';
 import Blume from './pages/projects/Blume.jsx';
+import Beans from './pages/projects/Beans.jsx';
+import Calenton from './pages/projects/Calenton.jsx';
+import Ethereal from './pages/projects/Ethereal.jsx';
 
 // importing ract-router-dom
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -27,6 +30,15 @@ const router=createBrowserRouter([
   {
     path:'/Blume',
     element:<Blume/>
+  },{
+    path:'/Beans',
+    element:<Beans/>
+  },{
+    path:'/Calenton',
+    element:<Calenton/>
+  },{
+    path:'/Ethereal',
+    element:<Ethereal/>
   },{
     path:'/AuraStudio',
     element:<AuraStudio/>

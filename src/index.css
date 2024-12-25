@@ -25,7 +25,57 @@
   margin-bottom: 6px;
 }
 
-.davinci-images {
+
+.blume-images {
+  width: 100%;
+  height: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.blume-container {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  margin-top: 32px;
+  align-items: center;
+  width: 95%;
+}.beans-images {
+  width: 100%;
+  height: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.ethereal-container {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  justify-content: center;
+  text-align: center;
+  margin:auto;
+  margin-top: 32px;
+}
+
+.ethereal-images {
+  width: 100%;
+  height: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin:auto;
+}
+
+#calenton-container {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  margin-top: 32px;
+  align-items: center;
+  width: 95%;
+}
+.calenton-images {
   width: 100%;
   height: auto;
   margin-top: 6px;
@@ -37,14 +87,32 @@
   height: auto;
   margin-top: 6px;
   margin-bottom: 6px;
+  
+}
+.ember-container{
+  display: flex;
+    flex-direction: column;
 }
 
-.blume-images{
-  width: 100%;
-    height: auto;
-    margin-top: 6px;
-    margin-bottom: 6px;
+#harmony-container {
+  display: flex;
+  flex-direction: column;
 }
+
+.davinci-container {
+  display: flex;
+  flex-direction: column;
+
+}
+#davinci-body {
+  display: flex;
+  flex-direction: column;
+
+}.davinci-images {
+  width:90%
+
+}
+
 
 .astralis-images {
   width: 100%;
@@ -102,6 +170,8 @@ h2{
 
 
 @media screen and (max-width:900px){
+
+  
 
   :root{
     background-color: black;
@@ -250,12 +320,14 @@ h2{
   }
 
   .project{
-    width:90%;
+    width:95%;
 
   }
   .cover-page{
     /* height:250px; */
   }
+
+    
 
 }
 

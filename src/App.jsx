@@ -7,6 +7,14 @@ import { useNavigate } from 'react-router-dom';
 // importing the video
 import homepageVideo from "../public/homepage.mp4"
 // importing cover pages
+import blumeCp from "../public/portfolio assets/blume/3-1.png";
+import beansCp from "../public/portfolio assets/beans/1-1.png";
+import calentonCp from "../public/portfolio assets/calenton/1-1.png";import etherealCp from "../public/portfolio assets/ethereal/cover-page.png";
+import harmonyCp from "../public/portfolio assets/harmony/page-6.png";
+import emberCp from "../public/portfolio assets/emberRoast/emberRoast-cover-page.png";
+import artistshubCp from "../public/portfolio assets/artistsHub/cover-page.png";
+import davinciCp from "../public/portfolio assets/davinciMedia/davinci-cover-page.png";
+import auraCp from "../public/portfolio assets/aura/aura-cover-page.png";
 
 
 import Sample from '../src/pages/projects/Sample.jsx'
@@ -73,40 +81,40 @@ function App() {
 
         <div id='projects-mobile'>
           <div className="project" onClick={()=>navigate('/Blume')}>
-            <img className="cover-page" src="../../public/portfolio assets/blume/3-1.png"></img>
+            <img className="cover-page" src={blumeCp}></img>
             <p>BLUME '24</p>
           </div>
           
-          <div className="project">
-            <img className="cover-page" src="../../public/portfolio assets/beans/1-1.png"></img>
+          <div className="project" onClick={()=>navigate('/Beans')}>
+            <img className="cover-page" src={beansCp}></img>
             <p>BEANS '24</p>
           </div>
-          <div className="project">
-            <img className="cover-page" src="../../public/portfolio assets/calenton/1-1.png"></img>
+          <div className="project" onClick={()=>navigate('Calenton')}>
+            <img className="cover-page" src={calentonCp}></img>
             <p>CALENTON '24</p>
           </div>
           <div className="project">
-            <img className="cover-page" src="../../public/portfolio assets/ethereal/cover-page.png"></img>
+            <img className="cover-page" src={etherealCp} onClick={()=>navigate("Ethereal")}></img>
             <p>ETHEREAL ESSENCE '24</p>
           </div>
           <div className="project">
-            <img className="cover-page" src="../../public/portfolio assets/emberRoast/emberRoast-cover-page.png"></img>
+            <img className="cover-page" src={emberCp} onClick={(navigate('/EmberRoast'))}></img>
             <p>EMBER ROAST '24</p>
           </div>
           <div className="project">
-            <img className="cover-page" src="../../public/portfolio assets/harmony/page-6.png"></img>
+            <img className="cover-page" src={harmonyCp} onClick={(navigate('/HarmonyStore'))}></img>
             <p>HARMONY '24</p>
           </div>
           <div className="project">
-            <img className="cover-page" src="../../public/portfolio assets/aura/aura-cover-page.png"></img>
+            <img className="cover-page" src={auraCp} onClick={(navigate('/AuraStudio'))}></img>
             <p>AURA STUDIOS '24</p>
           </div>
           <div className="project">
-            <img className="cover-page" src="../../public/portfolio assets/artistsHub/cover-page.png"></img>
+            <img className="cover-page" src={artistshubCp} onClick={(navigate('/TheArtistsHub'))}></img>
             <p>THE ARTIST'S HUB '24</p>
           </div>
           <div className="project">
-            <img className="cover-page" src="../../public/portfolio assets/davinciMedia/davinci-cover-page.png"></img>
+            <img className="cover-page" src={davinciCp}  onClick={(navigate('/DavinciMedia'))}></img>
             <p>DAVINCI MEDIA '24</p>
           </div>
           {/* <div className="project">

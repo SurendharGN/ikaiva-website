@@ -14,8 +14,8 @@ import img11 from "../../../public/portfolio assets/blume/3-4.png"
 const Blume = () => {
   return (
     <body>
-      
-      <img src={img10} alt="" className='blume-images' />
+      <div className='blume-container'>
+        <img src={img8} alt="" className='blume-images' />
       <img src={img1} alt="" className='blume-images' />
       <img src={img2} alt="" className='blume-images' />
       <img src={img3} alt="" className='blume-images' />
@@ -23,9 +23,11 @@ const Blume = () => {
       <img src={img5} alt="" className='blume-images' />
       <img src={img6} alt="" className='blume-images' />
       <img src={img7} alt="" className='blume-images' />
-      <img src={img8} alt="" className='blume-images' />
+      <img src={img10} alt="" className='blume-images' />
       <img src={img9} alt="" className='blume-images' />
       <img src={img11} alt="" className='blume-images' />
+      </div>
+      
     </body>
   )
 }

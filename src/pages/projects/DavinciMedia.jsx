@@ -18,7 +18,7 @@ import { Link } from 'react-router-dom';
 
 const DavinciMedia = () => {
   return (
-    <body>
+    <body id="davinci-body">
       <p className="logo">ikaiva <span>studio.</span></p>
       <div>
         <h1>DAVINCI MEDIA</h1>
@@ -41,7 +41,8 @@ const DavinciMedia = () => {
         </div>
       </div>
 
-      <img src={cover} alt="" className="davinci-images" />
+      <div className='davinci-container'>
+        <img src={cover} alt="" className="davinci-images" />
       <img src={page1} alt="" className="davinci-images" />
       <img src={page2} alt="" className="davinci-images" />
       <img src={page3} alt="" className="davinci-images" />
@@ -52,6 +53,8 @@ const DavinciMedia = () => {
       <img src={page8} alt="" className="davinci-images" />
       <img src={page9} alt="" className="davinci-images" />
       <img src={page10} alt="" className="davinci-images" />
+      </div>
+      
       
       <p style={{color:"#333"}}>NEXT PROJECT</p>
       <Link to="/TheArtistsHub" className="nextProject">THE ARTISTS HUB</Link>

@@ -20,7 +20,7 @@ import { Link } from 'react-router-dom';
 
 const HarmonyStore = () => {
   return (
-    <body>
+    <body id="harmony-container">
       <p className="logo">ikaiva <span>studio.</span></p>
       <div>
         <h1>HARMONY STORE</h1>

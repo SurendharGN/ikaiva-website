@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 
 const EmberRoast = () => {
   return (
-    <body>
+    <body className="ember-container">
       <p className="logo">ikaiva <span>studio.</span></p>
       <div>
         <h1>EMBER ROAST</h1>
