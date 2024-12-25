@@ -39,6 +39,13 @@
   margin-bottom: 6px;
 }
 
+.blume-images{
+  width: 100%;
+    height: auto;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
 .astralis-images {
   width: 100%;
   height: auto;
@@ -138,7 +145,52 @@ h2{
       
     }
 
+    .scroll-container {
+  width: 300px; /* Adjust as needed */
+  overflow: hidden;
+  background: #000;
+  position: relative;
+}
+
+.scroll-content {
+  display: flex;
+  gap: 20px;
+  animation: scroll 10s linear infinite;
+  position: relative;
+}
+
+.scroll-content p {
+  color: #fff;
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+/* Keyframes for seamless scrolling */
+
+    #schedule-content{
+      display:flex;
+      align-items: center;
+      gap: 8px;
     
+    }
+    #circle{
+      height:6px;
+      width:6px;
+      background-color:white;
+      border-radius:100px;
+    }
+
+         @keyframes scroll {
+           from {
+             transform: translateX(100%);
+             /* Start off-screen to the right */
+           }
+    
+           to {
+             transform: translateX(-100%);
+             /* End off-screen to the left */
+           }
+         }
     #hero-vid {
       width: 100vw;
       height: 94vh;
@@ -182,6 +234,8 @@ h2{
     font-size:53vw;
     margin:0;
     padding:0;
+    align-items: center;
+    margin:auto;
     
   }
 
@@ -190,13 +244,17 @@ h2{
     gap:30px;
     flex-direction: column;
     margin-top:32px;
+    align-items: center;
+    
 
   }
 
-  .p{
-    height:250px;
-    width:100%;
-    background-color: gray;
+  .project{
+    width:90%;
+
+  }
+  .cover-page{
+    /* height:250px; */
   }
 
 }
@@ -207,6 +265,9 @@ h2{
     display:none;
   }
 
+  #projects-mobile{
+    display:none;
+  }
   html,
     body {
       margin: 0;
@@ -263,6 +324,10 @@ h2{
   
   
       /* Prevent accidental scrollbars */
+    }
+
+    #schedule-container{
+      display:none
     }
 
   #projects-parent{

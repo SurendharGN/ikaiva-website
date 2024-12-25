@@ -1,28 +1,25 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import { useNavigate } from 'react-router-dom';
 
 // importing the video
 import homepageVideo from "../public/homepage.mp4"
 // importing cover pages
-import artistHubCover from '../public/portfolio assets/artistsHub/cover-page.png';
-import auraCover from '../public/portfolio assets/aura/aura-cover-page.png';
-import harmonyCover from '../public/portfolio assets/harmony/harmony-cover-page.png';
-import emberCover from '../public/portfolio assets/emberRoast/emberRoast-cover-page.png';
-import astralisCover from '../public/portfolio assets/astralisVentures/astralisVentures-cover-page.png';
-import amplifyCover from '../public/portfolio assets/amplify/amplify-cover-page.png';
-import davinciCover from '../public/portfolio assets/davinciMedia/davinci-cover-page.png';
+
 
 import Sample from '../src/pages/projects/Sample.jsx'
 // importing functions
 
 function App() {
+  const navigate=useNavigate();
 
   
 
   return (
     <body>
+
 
       
 
@@ -53,17 +50,70 @@ function App() {
             <span id="richText">IKAIVA</span>
           </div>
 
-        <div id="projects-mobile">
-          <div className="p"></div>
-          <div className="p"></div>
-          <div className="p"></div>
-          <div className="p"></div>
-          <div className="p"></div>
-          <div className="p"></div>
-          <div className="p"></div>
-          <div className="p"></div>
-          <div className="p"></div>
-          <div className="p"></div>
+        {/* <div id="schedule-container">
+          <div id="schedule-content">
+            <p className='schedule-para'>3 Premium Slots</p>
+          <div id="circle"></div>
+          <p className='schedule-para'>January '25</p>
+          <div id="circle"></div>
+          <p className='schedule-para'>Schedule Now</p>
+          
+          
+          
+          <div id="circle"></div>
+          </div>
+          
+          
+          
+          
+        
+        
+          
+        </div> */}
+
+        <div id='projects-mobile'>
+          <div className="project" onClick={()=>navigate('/Blume')}>
+            <img className="cover-page" src="../../public/portfolio assets/blume/3-1.png"></img>
+            <p>BLUME '24</p>
+          </div>
+          
+          <div className="project">
+            <img className="cover-page" src="../../public/portfolio assets/beans/1-1.png"></img>
+            <p>BEANS '24</p>
+          </div>
+          <div className="project">
+            <img className="cover-page" src="../../public/portfolio assets/calenton/1-1.png"></img>
+            <p>CALENTON '24</p>
+          </div>
+          <div className="project">
+            <img className="cover-page" src="../../public/portfolio assets/ethereal/cover-page.png"></img>
+            <p>ETHEREAL ESSENCE '24</p>
+          </div>
+          <div className="project">
+            <img className="cover-page" src="../../public/portfolio assets/emberRoast/emberRoast-cover-page.png"></img>
+            <p>EMBER ROAST '24</p>
+          </div>
+          <div className="project">
+            <img className="cover-page" src="../../public/portfolio assets/harmony/page-6.png"></img>
+            <p>HARMONY '24</p>
+          </div>
+          <div className="project">
+            <img className="cover-page" src="../../public/portfolio assets/aura/aura-cover-page.png"></img>
+            <p>AURA STUDIOS '24</p>
+          </div>
+          <div className="project">
+            <img className="cover-page" src="../../public/portfolio assets/artistsHub/cover-page.png"></img>
+            <p>THE ARTIST'S HUB '24</p>
+          </div>
+          <div className="project">
+            <img className="cover-page" src="../../public/portfolio assets/davinciMedia/davinci-cover-page.png"></img>
+            <p>DAVINCI MEDIA '24</p>
+          </div>
+          {/* <div className="project">
+            <img className="cover-page" src="../../public/portfolio assets/harmony/harmony-cover-page.png"></img>
+            <p>MANAM CHENNAI '24</p>
+            
+          </div> */}
         </div>
       </div>
 
@@ -72,44 +122,7 @@ function App() {
 
       
 
-      {/* <div id="project-display">
-        <div id="project-container">
-          <div className="project" onClick={()=>navigate('/TheArtistsHub')} style={{ cursor: 'pointer' }}>
-        <img src={artistHubCover} alt="" className='cover-page'/>
-        <p>THE ARTIST'S HUB '24</p>
-      </div>
-      
-      <div className="project" onClick={()=>navigate('/AuraStudio')} style={{ cursor: 'pointer' }}>
-        <img src={auraCover} alt="" className="cover-page"/>
-        <p>AURA STUDIO '24</p>
-      </div>
-
-      <div className="project" onClick={()=>navigate('/EmberRoast')} style={{ cursor: 'pointer' }}>
-        <img src={emberCover} alt="" className="cover-page"/>
-        <p>EMBER ROAST '24</p>
-      </div>
-
-      <div className="project" onClick={()=>navigate('/AstralisVentures')} style={{ cursor: 'pointer' }}>
-        <img src={astralisCover} alt="" className="cover-page"/>
-        <p>ASTRALIS VENTURES '24</p>
-      </div>
-
-      <div className="project" onClick={()=>navigate('/HarmonyStore')} style={{ cursor: 'pointer' }}>
-        <img src={harmonyCover} alt="" className="cover-page"/>
-        <p>THE HARMONY STORE '24</p>
-      </div>
-
-      <div className="project" onClick={()=>navigate('/AmplifyMediaHouse')} style={{ cursor: 'pointer' }}>
-        <img src={amplifyCover} alt="" className="cover-page" />
-        <p>AMPLIFY MEDIA HOUSE '24</p>
-      </div>
-
-      <div className="project" onClick={()=>navigate('/DavinciMedia')} style={{ cursor: 'pointer' }}>
-        <img src={davinciCover} alt="" className="cover-page"/>
-        <p>DAVINCI MEDIA '24</p>
-      </div>
-        </div>
-      </div> */}
+     
       <div id="projects">
         <Sample/>
 

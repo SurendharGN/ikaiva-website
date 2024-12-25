@@ -5,13 +5,12 @@ import App from './App.jsx'
 
 // importing the pages
 import TheArtistsHub from './pages/projects/TheArtistsHub.jsx';
-import AmplifyMediaHouse from './pages/projects/AmplifyMediaHouse.jsx';
-import AstralisVentures from './pages/projects/AstralisVentures.jsx';
 import AuraStudio from './pages/projects/AuraStudio.jsx';
 import DavinciMedia from './pages/projects/DavinciMedia.jsx';
 import EmberRoast from './pages/projects/EmberRoast.jsx';
 import HarmonyStore from './pages/projects/HarmonyStore.jsx';
 import Sample from './pages/projects/Sample.jsx';
+import Blume from './pages/projects/Blume.jsx';
 
 // importing ract-router-dom
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -24,12 +23,10 @@ const router=createBrowserRouter([
   {
     path:'/TheArtistsHub',
     element:<TheArtistsHub/>
-  },{
-    path:'/AmplifyMediaHouse',
-    element:<AmplifyMediaHouse/>
-  },{
-    path:'/AstralisVentures',
-    element:<AstralisVentures/>
+  },
+  {
+    path:'/Blume',
+    element:<Blume/>
   },{
     path:'/AuraStudio',
     element:<AuraStudio/>
